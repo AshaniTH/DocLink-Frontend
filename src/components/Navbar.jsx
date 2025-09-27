@@ -14,7 +14,7 @@ const [token,setToken]= useState(true)
   return (
     <div className="flex justify-between items-center text-sm py-4 mb-5 border-b border-b-gray-200">
         {/* Logo + Text */}
-      <div className="flex items-center gap-1 cursor-pointer">
+      <div onClick={()=>navigate('/')}  className="flex items-center gap-1 cursor-pointer">
         <img className="w-15 h-15" src={logo} alt="DocLink Logo" />
         <span className="text-primary font-bold text-xl">DocLink</span>
       </div>
